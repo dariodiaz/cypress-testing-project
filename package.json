@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/dariodiaz/cypress-testing-project/issues"
   },
-  "homepage": "https://github.com/dariodiaz/cypress-testing-project#readme"
+  "homepage": "https://github.com/dariodiaz/cypress-testing-project#readme",
+  "dependencies": {
+    "cypress": "^4.11.0",
+    "prettier": "^2.0.5"
+  }
 }
