@@ -26,7 +26,26 @@ describe('Challenge to review what we have learned so far', () => {
         cy.url()
             .should('include', 'index.html')
     })
-    // Go to Poetry Category
+
+    it('should click on Poetry Category', () => {
+        cy.get('a')
+            .contains('Poetry')
+            .click()
+        cy.get('h1')
+            .contains('Poetry')
+    })
+
     // Open Olio Book
+    it('should click on Olio Book', () => {
+        cy.get('a')
+            .contains('Olio')
+            .click()
+        cy.get('h1')
+            .contains('Olio')
+    })
     // Validate Price 23.88
-});
+    it('should validate the price', () => {
+        cy.get('.price_color')
+            .contains('£23.88')
+    })
+})
