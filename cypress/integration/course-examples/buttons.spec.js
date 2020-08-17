@@ -26,7 +26,4 @@ describe('Challenge to review what we have learned so far', () => {
         cy.url()
             .should('include', 'index.html')
     })
-    // Go to Poetry Category
-    // Open Olio Book
-    // Validate Price 23.88
 });
