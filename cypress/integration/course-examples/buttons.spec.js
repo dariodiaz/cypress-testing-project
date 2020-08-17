@@ -16,6 +16,6 @@ describe('Browser Actions - Buttons', () => {
     it('should displaye correct numbers of books', () => {
         cy.get('.product_pod')
             .its('length')
-            .should('eq', 12)
+            .should('eq', 11)
     })
 })
