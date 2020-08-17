@@ -18,12 +18,22 @@ describe('Browser Actions - Buttons', () => {
             .its('length')
             .should('eq', 11)
     })
+
+    it('should click on poetry category', () => {
+        cy.get('a')
+            .contains('Poetry')
+            .click()
+    })
+
+    it('should click on Olio book detail', () => {
+        cy.get('a')
+            .contains('Olio')
+            .click()
+    })
+
+    it('should have correct price tag', () => {
+        cy.get('.price_color')
+            .contains('£23.88')
+    });
 })
 
-describe('Challenge to review what we have learned so far', () => {
-    it('should load books website', () => {
-        cy.visit('https://books.toscrape.com/index.html', { timeout: 10000})
-        cy.url()
-            .should('include', 'index.html')
-    })
-});
