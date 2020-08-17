@@ -19,3 +19,14 @@ describe('Browser Actions - Buttons', () => {
             .should('eq', 11)
     })
 })
+
+describe('Challenge to review what we have learned so far', () => {
+    it('should load books website', () => {
+        cy.visit('https://books.toscrape.com/index.html', { timeout: 10000})
+        cy.url()
+            .should('include', 'index.html')
+    })
+    // Go to Poetry Category
+    // Open Olio Book
+    // Validate Price 23.88
+});
