@@ -34,6 +34,6 @@ describe('Browser Actions - Buttons', () => {
     it('should have correct price tag', () => {
         cy.get('.price_color')
             .contains('£23.88')
-    });
+    })
 })
 
