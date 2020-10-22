@@ -3,7 +3,9 @@ describe('Browser Actions - Buttons', () => {
         cy.visit('https://books.toscrape.com/index.html', { timeout: 10000})
         cy.url()
             .should('include', 'index.html')
-        cy.log('Website loaded!!')
+        cy.log('Before reload')
+        cy.reload()
+        cy.log('After reload')
     })
 
     it('should click on Travel Category', () => {
