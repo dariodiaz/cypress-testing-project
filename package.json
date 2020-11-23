@@ -24,7 +24,9 @@
   },
   "homepage": "https://github.com/dariodiaz/cypress-testing-project#readme",
   "dependencies": {
-    "cypress": "^4.11.0",
     "prettier": "^2.0.5"
+  },
+  "devDependencies": {
+    "cypress": "^5.6.0"
   }
 }
