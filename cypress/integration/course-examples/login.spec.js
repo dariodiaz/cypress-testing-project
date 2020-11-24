@@ -5,13 +5,15 @@ describe('Working with inputs', () => {
     })
 
     it('should fill username', () => {
-        cy.get('#user_login').clear()
-        cy.get('#user_login').type('Some invalid name')
+        cy.get('#user_login').as('username')
+        cy.get('@username').clear()
+        cy.get('@username').type('Some invalid name')
     })
 
     it('should fill password', () => {
-        cy.get('#user_password').clear()
-        cy.get('#user_password').type('Some invalid password')
+        cy.get('#user_password').as('password')
+        cy.get('@password').clear()
+        cy.get('@password').type('Some invalid password')
     })
 
     it('should check remember checkbox', () => {
