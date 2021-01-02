@@ -1,0 +1,23 @@
+{
+  "name": "cy-visual-tests",
+  "version": "1.0.0",
+  "description": "Visual regression testing with Cypress",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run-tests": "cypress run",
+    "cy:update-snapshots": "cypress run --env updateSnapshots=true"
+  },
+  "keywords": [
+    "cypress",
+    "visual",
+    "testing"
+  ],
+  "author": "Dario Diaz",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^6.2.0",
+    "cypress-image-snapshot": "^4.0.0",
+    "prettier": "^2.2.1"
+  }
+}
