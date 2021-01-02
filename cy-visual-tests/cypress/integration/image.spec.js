@@ -13,3 +13,10 @@ describe('Visual Regression', () => {
         })
     })
 })
+
+describe('Single Element Snapshot', () => {
+    it('Should match a single element on the page', () => {
+        cy.visit('http://example.com/')
+        cy.get('h1').matchImageSnapshot()
+    });
+});
