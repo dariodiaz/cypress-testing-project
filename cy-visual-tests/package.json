@@ -8,7 +8,8 @@
     "cy:run-tests": "cypress run",
     "cy:update-snapshots": "cypress run --env updateSnapshots=true",
     "cy:run-tests-with-reporter": "cypress run --reporter cypress-image-snapshot/reporter",
-    "cy:run-tests.with-no-failure": "cypress run --env failOnSnapshotDiff=false"
+    "cy:run-tests.with-no-failure": "cypress run --env failOnSnapshotDiff=false",
+    "cy:percy": "percy exec -- cypress run"
   },
   "keywords": [
     "cypress",
@@ -18,6 +19,7 @@
   "author": "Dario Diaz",
   "license": "ISC",
   "dependencies": {
+    "@percy/cypress": "^2.3.3",
     "cypress": "^6.2.0",
     "cypress-image-snapshot": "^4.0.0",
     "prettier": "^2.2.1"
