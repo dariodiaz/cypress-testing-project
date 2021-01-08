@@ -2,6 +2,7 @@ const URL = 'http://zero.webappsecurity.com/login.html'
 const USERNAME = '#user_login'
 const PASSWORD = '#user_password'
 const SUBMIT_BUTTON = 'input[name="submit"]'
+const ERROR_MESSAGE = '.alert-error'
 
 class LoginPage {
     static visit() {
@@ -18,6 +19,10 @@ class LoginPage {
 
     static submitLogin() {
         cy.get(SUBMIT_BUTTON).click()
+    }
+
+    static shouldShowErrorMessage() {
+        cy.get(ERROR_MESSAGE).contains('Login and/or password are wrong')
     }
 }
 
