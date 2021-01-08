@@ -15,10 +15,10 @@
   "author": "Dario Diaz",
   "license": "ISC",
   "dependencies": {
-    "cypress": "^6.2.0",
     "cypress-cucumber-preprocessor": "^4.0.0"
   },
   "devDependencies": {
+    "cypress": "^6.2.1",
     "prettier": "^2.2.1"
   },
   "cypress-cucumber-preprocessor": {
