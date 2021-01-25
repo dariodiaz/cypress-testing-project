@@ -1,0 +1,19 @@
+{
+  "name": "cy-dashboard",
+  "version": "1.0.0",
+  "description": "cypress with dashboard",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
+  },
+  "keywords": [
+    "cypress",
+    "dashboard"
+  ],
+  "author": "Dario Diaz",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^6.3.0"
+  }
+}
