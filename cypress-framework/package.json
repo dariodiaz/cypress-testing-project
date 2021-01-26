@@ -1,0 +1,22 @@
+{
+  "name": "cypress-framework",
+  "version": "1.0.0",
+  "description": "Automation Framework with Cypress",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open"
+  },
+  "keywords": [
+    "Automation",
+    "Framework",
+    "Cypress",
+    "Dashboard"
+  ],
+  "author": "Dario Diaz",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^6.3.0",
+    "cypress-image-snapshot": "^4.0.1",
+    "prettier": "^2.2.1"
+  }
+}
