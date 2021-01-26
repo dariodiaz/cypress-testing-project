@@ -4,4 +4,3 @@ cypress/screenshots/
 cypress-training.code-workspace
 cy-visual-tests/cypress/snapshots
 *.zip
-cy-dashboard/jenkins.war
