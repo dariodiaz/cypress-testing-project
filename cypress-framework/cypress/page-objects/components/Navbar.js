@@ -8,6 +8,6 @@ export default class Navbar {
     }
 
     static clickSignIn() {
-        cy.get('signin_button').click()
+        cy.get('#signin_button').click()
     }
 }
