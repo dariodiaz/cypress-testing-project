@@ -7,7 +7,10 @@
     "cy:open": "cypress open",
     "cy:run": "cypress run",
     "cy:update-snapshots": "cypress run --env updateSnapshots=true",
-    "cy:run-dashboard": "cypress run --record --key 3e51f767-5445-4a80-b57d-7f144a292827"
+    "cy:run-dashboard": "cypress run --record --key 3e51f767-5445-4a80-b57d-7f144a292827",
+    "cy:run:chrome": "cypress run --browser chrome",
+    "cy:run:firefox": "cypress run --browser firefox",
+    "cy:run:electron": "cypress run --browser electron"
   },
   "keywords": [
     "Automation",
