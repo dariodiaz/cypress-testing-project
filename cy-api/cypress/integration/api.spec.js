@@ -14,4 +14,11 @@ describe('REST API Test with Cypress', () => {
             .its('status')
             .should('equal', 200)
     })
+
+    it('API Test - Validate Name Value', () => {
+        cy.request('https://pokeapi.co/api/v2/pokemon/25').as('pokemon')
+        cy.get('@pokemon')
+            .its('body')
+            .should('include', { name: 'pikachu' })
+    })
 })
